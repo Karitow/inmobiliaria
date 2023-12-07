@@ -3,7 +3,7 @@ import propiedadesAlquiler from "./data/propiedades_alquiler.js";
 
 
 const mostrarPropiedades = (propiedades, containerId) => {
-  const container = document.getElementById(containerID)
+  const container = document.getElementById(containerId)
 
 const algunasPropiedades = propiedades.slice(0.3)
 algunasPropiedades.forEach((propiedad) =>{
@@ -36,8 +36,8 @@ algunasPropiedades.forEach((propiedad) =>{
       </div>        
   </article>
   `
-  containerCard.innerHTML = contenidoCard
-  algunasPropiedades.appendChild(algunasPropiedades)
+  containerCard.innerHTML = contenidoCard;
+  algunasPropiedades.appendChild(card)
   
 });
 }
